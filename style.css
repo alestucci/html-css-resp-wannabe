@@ -79,13 +79,21 @@ img {
     box-sizing: border-box;
   }
 
+  html {
+    font-size: .8em; /* NON SO SE ERA NECESSARIO */
+  }
+
+  img {
+    height: 100px;
+  }
+
+  /* BLOCCO LEZIONI */
+
   .row {
     width: 100%;
     margin: 0;
     padding: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    text-align: center;
   }
 
   #lezioni .row>.left,
@@ -96,5 +104,31 @@ img {
 
   #lezioni {
     background-color: #F2F2CC;
+  }
+
+  /* BLOCCO STEPS */
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: 100%;
+    padding: .5em 0;
+  }
+
+  /* BLOCCO PERCHE */
+  #why {
+    background-color: #F2F2CC;
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+  }
+
+  /* PER OVVIARE ALLA MANCANZA DELL'HR */
+  
+  #why .row div:not(:last-child) {
+    border-bottom: 2px solid #808080;
   }
 }
